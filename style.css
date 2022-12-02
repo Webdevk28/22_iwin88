@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Dancing+Script:wght@500&family=Darker+Grotesque:wght@500&family=EB+Garamond&family=Montserrat:wght@500&family=Poppins&family=Quicksand:wght@500&family=Tinos&family=Zilla+Slab:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+  background-color: #f5f5f5;
+}
+.main{
+  font-family: 'Quicksand', sans-serif;
+}
+/* bosba-list */
+/* 1 */
+.bosba {
+    --spacing: 15px;
+    --columns: 4;
+    margin-left: calc(-1 * var(--spacing));
+  }
+  .ream {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  .ream-title {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+/* 2 */
+.boxed {
+    --spacing: 15px;
+    --columns: 4;
+    margin-left: calc(-1 * var(--spacing));
+}
+.box {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+.box-title {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+  .head .logo-image{
+    width: 130px;
+  }
+  .head .logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .head .head-menu,
+  .head .install{
+    display: none;
+  }
+  .head .head-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head .close-button{
+    display: block;
+  }
+
+  /* main */
+
+  .main .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .bosba{
+    --columns: 1;
+  }
+  .main .boxed{
+    --columns: 1;
+  }
+  .main .card-item{
+    width: 100%;
+    padding: 10px;
+  }
+  .main .item-text{
+    padding: 10px;
+  }
+  .main .title-img{
+    width: 100%;
+  }
+  /* footer */
+  .footer .footer-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-left{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-img{
+    width: 120px;
+  }
+  .footer .footer-bottom{
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  .head .logo-image{
+    width: 130px;
+  }
+  .head .logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .head .head-menu,
+  .head .install{
+    display: none;
+  }
+  .head .head-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head .close-button{
+    display: block;
+  }
+
+  /* main */
+
+  .main .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .bosba{
+    --columns: 2;
+  }
+  .main .boxed{
+    --columns: 2;
+  }
+  /* huong dan */
+  .main .card-item{
+    width: 100%;
+    padding: 10px;
+  }
+  .main .game-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .item-text{
+    padding: 10px;
+  }
+  .main .title-img{
+    width: 100%;
+  }
+  /* footer */
+  .footer .footer-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-left{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-img{
+    width: 120px;
+  }
+  .footer .footer-bottom{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px){
+  /* .head .logo-image{
+    width: 130px;
+  }
+  .head .logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  } */
+  /* .head .head-menu,
+  .head .install{
+    display: none;
+  } */
+  /* .head .close-button{
+    display: block;
+  } */
+  .head .head-menu{
+    width: 100%;
+  }
+  .head .head-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* main */
+/* card */
+  .main .card{
+    display: flex;
+    flex-direction: row;
+  }
+  .main .bosba{
+    --columns: 2;
+  }
+  .main .boxed{
+    --columns: 2;
+  }
+  /* huong dan */
+  .main .card-item{
+    width: 100%;
+    padding: 10px;
+  }
+  .main .game-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .item-text{
+    padding: 10px;
+  }
+  .main .title-img{
+    width: 100%;
+  }
+}
